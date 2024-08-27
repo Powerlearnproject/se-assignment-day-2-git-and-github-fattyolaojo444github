@@ -35,9 +35,12 @@ Has work flow flexibility
 
 How does version control help in maintaining project integrity?
 It identifies the problem areas so that team members can quickly revert changes to a previous version, compare changes, or identify who committed the problem.
+
 It allows multiple team members to work on different parts of the code simultaneously, merge their changes, and resolve conflicts efficiently.
 
+
 ## Describe the process of setting up a new repository on GitHub. What are the key steps involved, and what are some of the important decisions you need to make during this process?
+file Added, kindly check
 
 ## Discuss the importance of the README file in a GitHub repository. What should be included in a well-written README, and how does it contribute to effective collaboration?
 
