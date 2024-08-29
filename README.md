@@ -67,7 +67,52 @@ A repository is the most basic element of GitHub. It's a place where you can sto
 Public repositories are accessible to everyone on the internet. 
 Private repositories are only accessible to you, people you explicitly share access with, and, for organization repositories, certain organization members
 
-## Detail the steps involved in making your first commit to a GitHub repository. What are commits, and how do they help in tracking changes and managing different versions of your project?
+Products
+GitHub Enterprise public vs. private repo
+Asked 8 years, 10 months ago
+Modified 3 years, 8 months ago
+Viewed 28k times
+14
+
+If we are using GitHub Enterprise inside the company and the Private Mode is enabled, what's different between a public and private repo?
+
+github-enterprise
+Share
+Improve this question
+Follow
+edited Aug 30, 2018 at 9:39
+Michael Dorner's user avatar
+Michael Dorner
+19.4k1414 gold badges9393 silver badges124124 bronze badges
+asked Oct 14, 2015 at 16:13
+Jirong Hu's user avatar
+Jirong Hu
+36111 gold badge33 silver badges1010 bronze badges
+Add a comment
+4 Answers
+Sorted by:
+
+Highest score (default)
+7
+
+Typically, your Github Enterprise instances are visible to developers within your organization. However, also within your organization, you might want to have a more fine-grained control of who is allowed to see which repository.
+
+Because of that, Github Enterprise knows two visibilities of repositories - private and public.
+
+It's straight forward, as the documentation tells us:
+
+Public repositories are a great choice for getting started! They're visible to any user on your GitHub Enterprise instance, so you can benefit from a collaborative community.
+
+Private repositories require a little more setup. They're only available to you, the repository owner, as well as any collaborators you choose to share with.hb
+
+## Detail the steps involved in making your first commit to a GitHub repository. What  commits, and how do they help in tracking changes and managing different versions of your project?
+Steps
+Create a sample project.
+Clone the repository.
+Create a branch and make your changes.
+Commit and push your changes.
+Merge your changes.
+View your changes in GitLab.
 
 ## How does branching work in Git, and why is it an important feature for collaborative development on GitHub? Discuss the process of creating, using, and merging branches in a typical workflow.
 
