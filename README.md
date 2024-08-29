@@ -131,11 +131,7 @@ The git pull command is used to fetch and download content from a remote reposit
 Pull requests enable efficient code review, facilitate knowledge sharing, and improve code quality. By requiring team members to review and approve changes, potential issues, bugs, or suboptimal design decisions can be identified and addressed before the changes are integrated into the main codebase
 
 Steps to pull request
-The steps of a pull request
-To create a pull request, follow the steps outlined below.
-
-Create a new git branch to work locally using the following command:
-git -b BRANCH_NAME
+Create a new git branch to work locally using the following command: git -b BRANCH_NAME
 Implement changes and push them frequently (so that they do not get lost) using the following command:
 git add NAME_OF_THE_FILE
 git commit -m "DESCRIBE YOUR RECENT CHANGES"
