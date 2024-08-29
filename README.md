@@ -1,4 +1,4 @@
-# se-day-2-git-and-github
+f# se-day-2-git-and-github
 ## Explain the fundamental concepts of version control and why GitHub is a popular tool for managing versions of code. How does version control help in maintaining project integrity?
 Version control - also known as source control or revision control, it is an important software development practice for tracking and managing changes made to code and other files. It is closely related to source code management.
 Version control systems are a category of software tools that helps in recording changes made to files by keeping a track of modifications done in the code. 
@@ -147,8 +147,24 @@ If you are unsure about a code change, submit a pull request for feedback. Other
 In any project, it is important to have experienced engineers review and accept or reject changes since you may miss some things that they can see from a fresh perspective. 
 
 
-
 ## Discuss the concept of "forking" a repository on GitHub. How does forking differ from cloning, and what are some scenarios where forking would be particularly useful?
+
+Discuss the concept of fork a repository
+A fork is a new repository that shares code and visibility settings with the original “upstream” repository. Forks are often used to iterate on ideas or changes before they are proposed back to the upstream repository, such as in open source projects or when a user does not have write access to the upstream repository.
+
+What is cloning?
+Repositories created on GitHub exist as remotes. When you clone a repository you are creating a local copy on your computer that you can sync with the remote on GitHub. Cloning is ideal for contributing directly to a repository alongside other users while utilizing branching and other collaboration tools to manage changes.
+
+ Cloning a repository can be used to create a backup that is regularly kept up to date, but it's important to note that although your clone will copy over Git data like files and commit history, it won't bring over issues, pull requests, and other GitHub elements.
+To clone, head to the main page of a repository and click the green Code button. In the dropdown that appears you will have the option to clone over HTTPS, SSH, or by using the GitHub CLI.
+
+What about forking?
+A fork is a copy of a repository that allows you to make your own changes without impacting the original project. A fork differs from a cloned copy in that it doesn't allow for direct collaboration with the root using local commands like git push and git pull. Instead, your fork exists on GitHub and you can contribute back to the original project using Pull Requests. You can also synch your fork easily to keep it up-to-date with changes from the root repository.
+
+Forks are ideal for situations where the root repository is serving as a basis for further iteration, or to play around with ideas -- instead of starting a project from scratch you can use an existing repository as a foundation then take it to the next level!
+
+ Keep in mind when working with a fork of a private repository that GitHub will consider the owner of the root repository to have ownership of its forks as well. This means that when a private repository is deleted any of its forks will also be removed. This isn't something to worry about for public repositories as in that case the fork is owned by the fork owner and will be detached or re-routed in the case a root is deleted.
+Forking a project is as easy as clicking the Fork button in the header of the repository home page. Once the process is complete you'll be taken to your forked copy where you can start collaborating! Forking a repository will copy data such as files and code but Issues, branches, pull requests and other features won't join the party. Instead, your fork will start the same way as a newly created repository so you can begin work on it as a fresh project.
 
 ## Examine the importance of issues and project boards on GitHub. How can they be used to track bugs, manage tasks, and improve project organization? Provide examples of how these tools can enhance collaborative efforts.
 
