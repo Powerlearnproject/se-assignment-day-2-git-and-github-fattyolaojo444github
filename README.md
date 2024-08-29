@@ -170,6 +170,15 @@ Forking a project is as easy as clicking the Fork button in the header of the re
 Issues let you track your work on GitHub. 
 When you mention an issue in another issue or pull request, the issue's timeline reflects the cross-reference so that you can keep track of related work. To indicate that work is in progress, you can link an issue to a pull request.
 
+Best practices for Projects
+Break down large issues into smaller issues.
+Communicate.
+Make use of the description, README, and status updates.
+Use views.
+Have a single source of truth.
+Use automation.
+Use different field types.
+
 Projects boards 
 On GitHub help you organize and prioritize your work using the Scrum framework for project management. The benefit from project boards is that you can link your repositories. This way all issues that are related to different projects can be organized in a unique project board
 Project boards are is literally a digital board that provides a visual of the work you need to get done. You can move and prioritize tasks on a project board as the project evolves and changes. 
