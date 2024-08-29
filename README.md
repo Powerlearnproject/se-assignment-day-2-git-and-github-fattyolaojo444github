@@ -125,6 +125,32 @@ Then, you create a branch using the following command:
 git branch crazy-experiment
 
 ## Explore the role of pull requests in the GitHub workflow. How do they facilitate code review and collaboration, and what are the typical steps involved in creating and merging a pull request?
+Explore the role of pull request
+The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content. Merging remote upstream changes into your local repository is a common task in Git-based collaboration work flows.
+
+Pull requests enable efficient code review, facilitate knowledge sharing, and improve code quality. By requiring team members to review and approve changes, potential issues, bugs, or suboptimal design decisions can be identified and addressed before the changes are integrated into the main codebase
+
+Steps to pull request
+The steps of a pull request
+To create a pull request, follow the steps outlined below.
+
+Create a new git branch to work locally using the following command:
+git -b BRANCH_NAME
+Implement changes and push them frequently (so that they do not get lost) using the following command:
+git add NAME_OF_THE_FILE
+git commit -m "DESCRIBE YOUR RECENT CHANGES"
+After you have finished the implementation and committed your changes locally, you should get the latest changes from the shared repository to ensure there are no conflicting changes. You can get the latest changes using the following command:
+git pull origin BRANCH_NAME
+Push your changes to the remote repository using the following command:
+git push --set-upstream-to origin REMOTE_BRANCH_NAME
+Navigate to the user interface of the platform where your shared repository is located (GitLab, GitHub, BitBucket). There you are asked to write the name of the pull request and a short description. You also have the option to assign it to someone from your team to review it.
+
+Facilitate collaboration 
+When it comes to collaboration, there are a few things that can make or break a team. One of those things is the ability to work together, even if members are responsible for different parts of the project. Using pull requests, changes can be made without impacting the work of others. They are a great way to gather tips or code improvements from team members.
+If you are unsure about a code change, submit a pull request for feedback. Other team members may have suggestions that you had not considered, and this can help you make better decisions about your code.
+In any project, it is important to have experienced engineers review and accept or reject changes since you may miss some things that they can see from a fresh perspective. 
+
+
 
 ## Discuss the concept of "forking" a repository on GitHub. How does forking differ from cloning, and what are some scenarios where forking would be particularly useful?
 
