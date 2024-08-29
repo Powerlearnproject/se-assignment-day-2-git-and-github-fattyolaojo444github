@@ -67,33 +67,7 @@ A repository is the most basic element of GitHub. It's a place where you can sto
 Public repositories are accessible to everyone on the internet. 
 Private repositories are only accessible to you, people you explicitly share access with, and, for organization repositories, certain organization members
 
-Products
-GitHub Enterprise public vs. private repo
-Asked 8 years, 10 months ago
-Modified 3 years, 8 months ago
-Viewed 28k times
-14
 
-If we are using GitHub Enterprise inside the company and the Private Mode is enabled, what's different between a public and private repo?
-
-github-enterprise
-Share
-Improve this question
-Follow
-edited Aug 30, 2018 at 9:39
-Michael Dorner's user avatar
-Michael Dorner
-19.4k1414 gold badges9393 silver badges124124 bronze badges
-asked Oct 14, 2015 at 16:13
-Jirong Hu's user avatar
-Jirong Hu
-36111 gold badge33 silver badges1010 bronze badges
-Add a comment
-4 Answers
-Sorted by:
-
-Highest score (default)
-7
 
 Typically, your Github Enterprise instances are visible to developers within your organization. However, also within your organization, you might want to have a more fine-grained control of who is allowed to see which repository.
 
@@ -103,7 +77,7 @@ It's straight forward, as the documentation tells us:
 
 Public repositories are a great choice for getting started! They're visible to any user on your GitHub Enterprise instance, so you can benefit from a collaborative community.
 
-Private repositories require a little more setup. They're only available to you, the repository owner, as well as any collaborators you choose to share with.hb
+Private repositories require a little more setup. They're only available to you, the repository owner, as well as any collaborators you choose to share with.
 
 ## Detail the steps involved in making your first commit to a GitHub repository. What  commits, and how do they help in tracking changes and managing different versions of your project?
 Steps
@@ -114,7 +88,41 @@ Commit and push your changes.
 Merge your changes.
 View your changes in GitLab.
 
+what is a commit
+A commit in the context of these version control systems refers to submitting the latest changes of the source code to the repository, and making these changes part of the head revision of the repository
+
 ## How does branching work in Git, and why is it an important feature for collaborative development on GitHub? Discuss the process of creating, using, and merging branches in a typical workflow.
+Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. This makes it harder for unstable code to get merged into the main code base, and it gives you the chance to clean up your future's history before merging it into the main branch
+How it works
+A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.
+The git branch command lets you create, list, rename, and delete branches. It doesn’t let you switch between branches or put a forked history back together again. For this reason, git branch is tightly integrated with the git checkout and git merge commands.
+
+Common options
+git branch
+List all of the branches in your repository. This is synonymous with git branch --list.
+
+git branch <branch>
+Create a new branch called ＜branch＞. This does not check out the new branch.
+
+git branch -d <branch>
+Delete the specified branch. This is a “safe” operation in that Git prevents you from deleting the branch if it has unmerged changes.
+
+git branch -D <branch>
+Force delete the specified branch, even if it has unmerged changes. This is the command to use if you want to permanently throw away all of the commits associated with a particular line of development.
+
+git branch -m <branch>
+Rename the current branch to ＜branch＞.
+
+git branch -a
+List all remote branches. 
+
+Creating branches
+It's important to understand that branches are just pointers to commits. When you create a branch, all Git needs to do is create a new pointer, it doesn’t change the repository in any other way. If you start with a repository that looks like this:
+
+Repository without branches
+Then, you create a branch using the following command:
+
+git branch crazy-experiment
 
 ## Explore the role of pull requests in the GitHub workflow. How do they facilitate code review and collaboration, and what are the typical steps involved in creating and merging a pull request?
 
