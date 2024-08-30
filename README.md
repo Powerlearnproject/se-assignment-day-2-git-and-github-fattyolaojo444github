@@ -3,6 +3,7 @@ f# se-day-2-git-and-github
 Version control - also known as source control or revision control, it is an important software development practice for tracking and managing changes made to code and other files. It is closely related to source code management.
 Version control systems are a category of software tools that helps in recording changes made to files by keeping a track of modifications done in the code. 
 
+
 Benefits of the version control system:
 Enhances the project development speed by providing efficient collaboration
 Leverages the productivity, expedites product delivery, and skills of the employees through better communication and assistance
